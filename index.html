@@ -107,6 +107,21 @@
     <p>Email: <a href="mailto:aleksey_osipov@mail.ru">aleksey_osipov@mail.ru</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/alosipov/" target="_blank">https://www.linkedin.com/in/alosipov/</a></p>
     
+    <script>
+    function initFreshChat() {
+      window.fcWidget.init({
+           token: "53a9b3ee-1fa4-4b86-a4d0-e6419e9b1a88",
+     host: "https://wchat.freshchat.com"
+      });
+    }
+    function initialize(i,t){var e;i.getElementById(t)?
+    initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,
+    e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}
+    function initiateCall(){initialize(document,"Freshchat-js-sdk")}
+    window.addEventListener?window.addEventListener("load",initiateCall,!1):
+    window.attachEvent("load",initiateCall,!1);
+    </script>
+
   </body>
 
   <footer>
